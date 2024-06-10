@@ -1,0 +1,299 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:倒立振子制御-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L VCC #PWR?
+U 1 1 58D15B4A
+P 3650 750
+F 0 "#PWR?" H 3650 600 50  0001 C CNN
+F 1 "VCC" H 3650 900 50  0000 C CNN
+F 2 "" H 3650 750 50  0000 C CNN
+F 3 "" H 3650 750 50  0000 C CNN
+	1    3650 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L ArduinoNano MicroController
+U 1 1 58D164AE
+P 2600 2400
+F 0 "MicroController" H 2650 3250 60  0000 C CNN
+F 1 "ArduinoNano" H 2600 3100 118 0000 C CNN
+F 2 "" H 2600 3100 60  0000 C CNN
+F 3 "" H 2600 3100 60  0000 C CNN
+	1    2600 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X10 MoterDriver_L
+U 1 1 58D16623
+P 1400 4700
+F 0 "MoterDriver_L" H 1400 5250 50  0000 C CNN
+F 1 "TA7291P" V 1500 4700 50  0000 C CNN
+F 2 "" H 1400 4700 50  0000 C CNN
+F 3 "" H 1400 4700 50  0000 C CNN
+	1    1400 4700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_01X10 MoterDriver_R
+U 1 1 58D168B2
+P 3500 4750
+F 0 "MoterDriver_R" H 3500 5300 50  0000 C CNN
+F 1 "TA7291P" V 3600 4750 50  0000 C CNN
+F 2 "" H 3500 4750 50  0000 C CNN
+F 3 "" H 3500 4750 50  0000 C CNN
+	1    3500 4750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 motor_L
+U 1 1 58D1731D
+P 2400 5050
+F 0 "motor_L" H 2400 5200 50  0000 C CNN
+F 1 "MoterTerminal" V 2550 4900 50  0000 C CNN
+F 2 "" H 2400 5050 50  0000 C CNN
+F 3 "" H 2400 5050 50  0000 C CNN
+	1    2400 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 motor_R
+U 1 1 58D17415
+P 4400 5100
+F 0 "motor_R" H 4400 5250 50  0000 C CNN
+F 1 "MoterTerminal" V 4550 4950 50  0000 C CNN
+F 2 "" H 4400 5100 50  0000 C CNN
+F 3 "" H 4400 5100 50  0000 C CNN
+	1    4400 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 58D1779E
+P 1600 4250
+F 0 "#PWR?" H 1600 4000 50  0001 C CNN
+F 1 "GND" H 1600 4100 50  0000 C CNN
+F 2 "" H 1600 4250 50  0000 C CNN
+F 3 "" H 1600 4250 50  0000 C CNN
+	1    1600 4250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 58D177CA
+P 3700 4300
+F 0 "#PWR?" H 3700 4050 50  0001 C CNN
+F 1 "GND" H 3700 4150 50  0000 C CNN
+F 2 "" H 3700 4300 50  0000 C CNN
+F 3 "" H 3700 4300 50  0000 C CNN
+	1    3700 4300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L VCC #PWR?
+U 1 1 58D1824F
+P 1600 4950
+F 0 "#PWR?" H 1600 4800 50  0001 C CNN
+F 1 "VCC" H 1600 5100 50  0000 C CNN
+F 2 "" H 1600 4950 50  0000 C CNN
+F 3 "" H 1600 4950 50  0000 C CNN
+	1    1600 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L VCC #PWR?
+U 1 1 58D1826F
+P 3700 5000
+F 0 "#PWR?" H 3700 4850 50  0001 C CNN
+F 1 "VCC" H 3700 5150 50  0000 C CNN
+F 2 "" H 3700 5000 50  0000 C CNN
+F 3 "" H 3700 5000 50  0000 C CNN
+	1    3700 5000
+	0    1    1    0   
+$EndComp
+$Comp
+L MPU6050 Gyro&AccelSensor
+U 1 1 58D18E65
+P 5400 2600
+F 0 "Gyro&AccelSensor" H 5400 3250 60  0000 C CNN
+F 1 "MPU6050" H 5450 3150 60  0000 C CNN
+F 2 "" H 5450 3150 60  0000 C CNN
+F 3 "" H 5450 3150 60  0000 C CNN
+	1    5400 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L SPST SW?
+U 1 1 58D17B6B
+P 3650 1250
+F 0 "SW?" H 3650 1350 50  0000 C CNN
+F 1 "SPST" H 3650 1150 50  0000 C CNN
+F 2 "" H 3650 1250 50  0000 C CNN
+F 3 "" H 3650 1250 50  0000 C CNN
+	1    3650 1250
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	1600 5150 2200 5150
+Wire Wire Line
+	2200 5150 2200 5100
+Wire Wire Line
+	1600 4350 2200 4350
+Wire Wire Line
+	2200 4350 2200 5000
+Wire Wire Line
+	3700 5200 4200 5200
+Wire Wire Line
+	4200 5200 4200 5150
+Wire Wire Line
+	3700 4400 4200 4400
+Wire Wire Line
+	4200 4400 4200 5050
+Wire Wire Line
+	1600 4650 1900 4650
+Wire Wire Line
+	1900 4650 1900 3950
+Wire Wire Line
+	1900 3950 1550 3950
+Wire Wire Line
+	1550 3950 1550 2400
+Wire Wire Line
+	1550 2400 1900 2400
+Wire Wire Line
+	1600 4750 1950 4750
+Wire Wire Line
+	1950 4750 1950 3900
+Wire Wire Line
+	1950 3900 1600 3900
+Wire Wire Line
+	1600 3900 1600 2500
+Wire Wire Line
+	1600 2500 1900 2500
+Wire Wire Line
+	3700 4700 4000 4700
+Wire Wire Line
+	4000 4700 4000 3850
+Wire Wire Line
+	4000 3850 1650 3850
+Wire Wire Line
+	1650 3850 1650 2600
+Wire Wire Line
+	1650 2600 1900 2600
+Wire Wire Line
+	1900 2700 1700 2700
+Wire Wire Line
+	1700 2700 1700 3800
+Wire Wire Line
+	1700 3800 4050 3800
+Wire Wire Line
+	4050 3800 4050 4800
+Wire Wire Line
+	4050 4800 3700 4800
+Wire Wire Line
+	2000 3700 4100 3700
+Wire Wire Line
+	4100 3700 4100 4900
+Wire Wire Line
+	4100 4900 3700 4900
+Wire Wire Line
+	2000 3700 2000 4850
+Wire Wire Line
+	2000 4850 1600 4850
+Wire Wire Line
+	3900 3650 3900 4600
+Wire Wire Line
+	3900 4600 3700 4600
+Wire Wire Line
+	5100 2700 5100 3300
+Wire Wire Line
+	5100 3300 3250 3300
+Wire Wire Line
+	3650 2750 5700 2750
+Wire Wire Line
+	5200 2750 5200 2700
+Wire Wire Line
+	5400 2700 5400 3050
+Wire Wire Line
+	5400 3050 3550 3050
+Wire Wire Line
+	3550 3050 3550 2700
+Wire Wire Line
+	3550 2700 3250 2700
+Wire Wire Line
+	3250 2600 3600 2600
+Wire Wire Line
+	3600 2600 3600 3000
+Wire Wire Line
+	3600 3000 5300 3000
+Wire Wire Line
+	5300 3000 5300 2700
+Wire Wire Line
+	5700 2750 5700 2700
+Connection ~ 5200 2750
+Wire Wire Line
+	3250 2100 3650 2100
+Wire Wire Line
+	3650 2100 3650 2750
+Wire Wire Line
+	3650 1750 3650 2000
+Wire Wire Line
+	3650 2000 3250 2000
+Wire Wire Line
+	1900 3200 1750 3200
+Wire Wire Line
+	1750 3200 1750 3750
+Wire Wire Line
+	1750 3750 1850 3750
+Wire Wire Line
+	1850 3750 1850 4550
+Wire Wire Line
+	1850 4550 1600 4550
+Wire Wire Line
+	3900 3650 1800 3650
+Wire Wire Line
+	1800 3650 1800 3300
+Wire Wire Line
+	1800 3300 1900 3300
+$EndSCHEMATC
